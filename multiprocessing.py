@@ -11,7 +11,6 @@ def main_multiprocessing():
   s = time.perf_counter()
   processes = []
   greetings = ['Dylan', 'Caroline', 'Trevor', 'Andrea']
-  # add your code here
   for i in range(len(greetings)):
     p = multiprocessing.Process(target = greeting_with_sleep, args = (greetings[i],))
     processes.append(p)
